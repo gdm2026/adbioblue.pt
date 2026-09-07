@@ -67,7 +67,7 @@ img{max-width:100%;display:block}
 
 /* hero */
 .hero{position:relative;color:#fff;isolation:isolate;min-height:560px;display:flex;align-items:flex-end}
-.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 55%;z-index:-2}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 55%;z-index:-2}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,24,54,.25) 0%,var(--hero-ov) 55%,rgba(8,24,54,.88) 100%);z-index:-1}
 .hero .wrap{padding:6rem 0 3.5rem;display:grid;gap:1.2rem;max-width:min(1180px,calc(100% - 2.5rem))}
 .hero .wm{font-size:clamp(2.6rem,6vw,4.6rem)}
@@ -121,6 +121,10 @@ img{max-width:100%;display:block}
 @media (max-width:520px){.spec dl{grid-template-columns:1fr;gap:.2rem .8rem}.spec dd{margin-bottom:.5rem}}
 
 /* produção */
+.feat-video{margin:2.4rem 0 0;border-radius:12px;overflow:hidden;background:#0B1E3A;border:1px solid var(--line)}
+.feat-video video{width:100%;aspect-ratio:16/9;display:block;background:#000}
+.feat-video figcaption{display:grid;gap:.2rem;padding:1rem 1.3rem;background:var(--card);color:var(--ink-2);font-size:.92rem}
+.feat-video figcaption b{font-family:"Barlow",system-ui,sans-serif;font-size:1.05rem;color:var(--ink)}
 .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:auto auto;gap:.8rem;margin-top:2.4rem}
 .gallery figure{margin:0;position:relative;border-radius:8px;overflow:hidden;background:var(--mist)}
 .gallery figure:first-child{grid-row:span 2}
@@ -232,7 +236,7 @@ footer .wm{font-size:1.5rem}
 </div></header>
 <main id="top">
 <section class="hero">
-  <img class="bg" src="img/fachada.jpg" alt="">
+  <video class="bg" autoplay muted loop playsinline preload="metadata" poster="img/fachada.jpg" aria-hidden="true"><source src="img/unidade.mp4" type="video/mp4"></video>
   <div class="wrap">
     <span class="wm wm-inv" aria-hidden="true"><span class="ad">Ad</span><span class="bio">Bio</span><span class="blue">Blue</span></span>
     <span class="kicker">Solução de ureia 32,5% · ISO 22241 · Produzida em Vila Real</span>
@@ -306,6 +310,10 @@ footer .wm{font-size:1.5rem}
 <section class="sec" id="producao"><div class="wrap">
   <div class="head"><span class="kicker">Produção</span><h2>Fabricado em Vila Real, com processo automatizado</h2></div>
   <div class="two"><p class="lede">A unidade da GDM Petro na Zona Industrial de Constantim foi criada de raiz para produzir AdBio Blue: tanques em aço inoxidável, mistura e doseamento automatizados, e verificação da concentração de ureia em cada lote com refratómetro digital.</p><p class="lede">Armazenamento e transporte dedicados garantem que o produto chega ao cliente com a mesma pureza com que saiu da linha — o que protege o catalisador SCR e o injetor do seu veículo.</p></div>
+  <figure class="feat-video">
+    <video controls muted loop playsinline preload="metadata" poster="img/unidade-poster.jpg"><source src="img/unidade.mp4" type="video/mp4"></video>
+    <figcaption><b>A unidade de Constantim, filmada em setembro de 2026</b><span>Placa de publicitação COMPETE 2030 na fachada, tanques de mistura em aço inoxidável, unidade de doseamento e depósitos de produto acabado. Vídeo sem cortes de cena, 27 s.</span></figcaption>
+  </figure>
   <div class="gallery"><figure><img src="img/nave.jpg" alt="Linha de produção e armazém de produto acabado" loading="lazy"><figcaption>Linha de produção e armazém de produto acabado</figcaption></figure><figure><img src="img/tanques1.jpg" alt="Tanques de mistura em aço inoxidável" loading="lazy"><figcaption>Tanques de mistura em aço inoxidável</figcaption></figure><figure><img src="img/tanques2.jpg" alt="Doseamento e painel de controlo" loading="lazy"><figcaption>Doseamento e painel de controlo</figcaption></figure><figure><img src="img/depositos.jpg" alt="Depósitos de produto acabado, 5 000 L" loading="lazy"><figcaption>Depósitos de produto acabado, 5 000 L</figcaption></figure><figure><img src="img/placas.jpg" alt="Unidade na Zona Industrial de Constantim, Vila Real" loading="lazy"><figcaption>Unidade na Zona Industrial de Constantim, Vila Real</figcaption></figure></div>
   <div class="pillars"><h3>Cinco compromissos, em cada litro</h3><ul><li>Solução de ureia 32,5%</li><li>Redução de emissões de NOx</li><li>Tecnologia e automatização</li><li>Processo sustentável</li><li>Desempenho e conformidade</li></ul></div>
 </div></section>
@@ -339,6 +347,8 @@ footer .wm{font-size:1.5rem}
 </div></footer>
 <script>
 (function(){
+  var v=document.querySelector('.hero video');
+  if(v && window.matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();}
   var b=document.querySelector('.nav-toggle'),u=document.querySelector('.nav ul');
   if(b){b.addEventListener('click',function(){var o=u.classList.toggle('open');b.setAttribute('aria-expanded',o)});
   u.addEventListener('click',function(e){if(e.target.tagName==='A')u.classList.remove('open')});}

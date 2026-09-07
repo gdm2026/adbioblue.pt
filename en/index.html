@@ -67,7 +67,7 @@ img{max-width:100%;display:block}
 
 /* hero */
 .hero{position:relative;color:#fff;isolation:isolate;min-height:560px;display:flex;align-items:flex-end}
-.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 55%;z-index:-2}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 55%;z-index:-2}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,24,54,.25) 0%,var(--hero-ov) 55%,rgba(8,24,54,.88) 100%);z-index:-1}
 .hero .wrap{padding:6rem 0 3.5rem;display:grid;gap:1.2rem;max-width:min(1180px,calc(100% - 2.5rem))}
 .hero .wm{font-size:clamp(2.6rem,6vw,4.6rem)}
@@ -121,6 +121,10 @@ img{max-width:100%;display:block}
 @media (max-width:520px){.spec dl{grid-template-columns:1fr;gap:.2rem .8rem}.spec dd{margin-bottom:.5rem}}
 
 /* produção */
+.feat-video{margin:2.4rem 0 0;border-radius:12px;overflow:hidden;background:#0B1E3A;border:1px solid var(--line)}
+.feat-video video{width:100%;aspect-ratio:16/9;display:block;background:#000}
+.feat-video figcaption{display:grid;gap:.2rem;padding:1rem 1.3rem;background:var(--card);color:var(--ink-2);font-size:.92rem}
+.feat-video figcaption b{font-family:"Barlow",system-ui,sans-serif;font-size:1.05rem;color:var(--ink)}
 .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:auto auto;gap:.8rem;margin-top:2.4rem}
 .gallery figure{margin:0;position:relative;border-radius:8px;overflow:hidden;background:var(--mist)}
 .gallery figure:first-child{grid-row:span 2}
@@ -232,7 +236,7 @@ footer .wm{font-size:1.5rem}
 </div></header>
 <main id="top">
 <section class="hero">
-  <img class="bg" src="../img/fachada.jpg" alt="">
+  <video class="bg" autoplay muted loop playsinline preload="metadata" poster="../img/fachada.jpg" aria-hidden="true"><source src="../img/unidade.mp4" type="video/mp4"></video>
   <div class="wrap">
     <span class="wm wm-inv" aria-hidden="true"><span class="ad">Ad</span><span class="bio">Bio</span><span class="blue">Blue</span></span>
     <span class="kicker">32.5% urea solution · ISO 22241 · Made in Vila Real, Portugal</span>
@@ -306,6 +310,10 @@ footer .wm{font-size:1.5rem}
 <section class="sec" id="producao"><div class="wrap">
   <div class="head"><span class="kicker">Production</span><h2>Made in Vila Real, on an automated line</h2></div>
   <div class="two"><p class="lede">GDM Petro's plant at the Constantim industrial estate was purpose‑built to produce AdBio Blue: stainless‑steel tanks, automated mixing and dosing, and urea concentration checked on every batch with a digital refractometer.</p><p class="lede">Dedicated storage and transport ensure the product reaches you with the same purity it left the line — protecting your vehicle's SCR catalyst and injector.</p></div>
+  <figure class="feat-video">
+    <video controls muted loop playsinline preload="metadata" poster="../img/unidade-poster.jpg"><source src="../img/unidade.mp4" type="video/mp4"></video>
+    <figcaption><b>The Constantim plant, filmed in September 2026</b><span>COMPETE 2030 publicity plaque on the façade, stainless‑steel mixing tanks, dosing unit and finished‑product tanks. Unstaged footage, 27 s.</span></figcaption>
+  </figure>
   <div class="gallery"><figure><img src="../img/nave.jpg" alt="Production line and finished‑goods warehouse" loading="lazy"><figcaption>Production line and finished‑goods warehouse</figcaption></figure><figure><img src="../img/tanques1.jpg" alt="Stainless‑steel mixing tanks" loading="lazy"><figcaption>Stainless‑steel mixing tanks</figcaption></figure><figure><img src="../img/tanques2.jpg" alt="Dosing unit and control panel" loading="lazy"><figcaption>Dosing unit and control panel</figcaption></figure><figure><img src="../img/depositos.jpg" alt="Finished‑product tanks, 5,000 L" loading="lazy"><figcaption>Finished‑product tanks, 5,000 L</figcaption></figure><figure><img src="../img/placas.jpg" alt="The plant at the Constantim industrial estate, Vila Real" loading="lazy"><figcaption>The plant at the Constantim industrial estate, Vila Real</figcaption></figure></div>
   <div class="pillars"><h3>Five commitments, in every litre</h3><ul><li>32.5% urea solution</li><li>NOx emission reduction</li><li>Technology and automation</li><li>Sustainable process</li><li>Performance and compliance</li></ul></div>
 </div></section>
@@ -339,6 +347,8 @@ footer .wm{font-size:1.5rem}
 </div></footer>
 <script>
 (function(){
+  var v=document.querySelector('.hero video');
+  if(v && window.matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();}
   var b=document.querySelector('.nav-toggle'),u=document.querySelector('.nav ul');
   if(b){b.addEventListener('click',function(){var o=u.classList.toggle('open');b.setAttribute('aria-expanded',o)});
   u.addEventListener('click',function(e){if(e.target.tagName==='A')u.classList.remove('open')});}
