@@ -1,0 +1,346 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AdBio Blue · GDM Petro</title><meta name="description" content="AdBio Blue: 32.5% urea solution for SCR systems, produced in Vila Real, Portugal to ISO 22241 / DIN 70070. Cuts NOx emissions from diesel vehicles by up to 90%. GDM Petro."><link rel="alternate" hreflang="pt-PT" href="https://adbioblue.pt/"><link rel="alternate" hreflang="en" href="https://adbioblue.pt/en/"><meta property="og:title" content="AdBio Blue · GDM Petro"><meta property="og:description" content="AdBio Blue: 32.5% urea solution for SCR systems, produced in Vila Real, Portugal to ISO 22241 / DIN 70070. Cuts NOx emissions from diesel vehicles by up to 90%. GDM Petro."><meta property="og:image" content="https://adbioblue.pt/img/fachada.jpg"><link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap"><style>
+:root{
+  --navy:#0B2A5B; --blue:#1B5FC1; --sky:#3E8DE3; --green:#7AB51D; --leaf:#5E9412;
+  --ink:#14213D; --ink-2:#3D4A63; --mute:#6B778C;
+  --paper:#F5F8FB; --card:#FFFFFF; --mist:#DCE6F2; --line:#C9D6E6; --tint:#EAF1F9;
+  --hero-ov: rgba(8,24,54,.62);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --navy:#DCE7F7; --blue:#6FA8F0; --sky:#8CC0FF; --green:#9BD141; --leaf:#B4E45C;
+    --ink:#E9F0FA; --ink-2:#B9C6DA; --mute:#8A98B0;
+    --paper:#0A1628; --card:#112240; --mist:#1B2E4F; --line:#26406B; --tint:#152A4D;
+    --hero-ov: rgba(4,12,30,.68);
+  }
+}
+:root[data-theme="dark"]{
+  --navy:#DCE7F7; --blue:#6FA8F0; --sky:#8CC0FF; --green:#9BD141; --leaf:#B4E45C;
+  --ink:#E9F0FA; --ink-2:#B9C6DA; --mute:#8A98B0;
+  --paper:#0A1628; --card:#112240; --mist:#1B2E4F; --line:#26406B; --tint:#152A4D;
+  --hero-ov: rgba(4,12,30,.68);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Source Sans 3","Segoe UI",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Barlow","Arial Narrow",system-ui,sans-serif;line-height:1.1;margin:0;text-wrap:balance;color:var(--ink)}
+h1{font-size:clamp(2.4rem,5.2vw,4.2rem);font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(1.8rem,3.4vw,2.7rem);font-weight:700}
+h3{font-size:1.35rem;font-weight:600}
+p{margin:0}
+a{color:var(--blue)}
+img{max-width:100%;display:block}
+.wrap{width:min(1180px,calc(100% - 2.5rem));margin-inline:auto}
+.kicker{font-family:"Barlow",system-ui,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;color:var(--green)}
+.lede{max-width:64ch;color:var(--ink-2);font-size:1.08rem}
+.sec{padding:5.5rem 0}
+.sec + .sec{border-top:1px solid var(--line)}
+.head{display:grid;gap:.9rem;margin-bottom:2.6rem;max-width:760px}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.35rem;border-radius:6px;font-family:"Barlow",system-ui,sans-serif;font-weight:600;font-size:1rem;letter-spacing:.02em;text-decoration:none;border:1.5px solid transparent;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.btn-primary{background:var(--green);color:#0B1E08;border-color:var(--green)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn-navy{background:var(--blue);color:#fff;border-color:var(--blue)}
+.btn-outline{background:transparent;color:var(--blue);border-color:var(--blue)}
+
+/* wordmark */
+.wm{font-family:"Barlow",system-ui,sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1;display:inline-flex;align-items:baseline;gap:.08em;text-decoration:none}
+.wm .ad{color:var(--navy)} .wm .bio{color:var(--green);position:relative} .wm .blue{color:var(--blue);font-weight:600;font-size:.72em;margin-left:.1em}
+.wm .bio::after{content:"";position:absolute;right:-.05em;top:-.28em;width:.42em;height:.42em;background:var(--leaf);border-radius:0 80% 0 80%;transform:rotate(-20deg)}
+.wm-inv .ad,.wm-inv .blue{color:#fff}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:66px}
+.nav .wm{font-size:1.55rem}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
+.nav li a{text-decoration:none;color:var(--ink-2);font-family:"Barlow",system-ui,sans-serif;font-weight:600;font-size:.88rem;letter-spacing:.03em;text-transform:uppercase}
+.nav li a:hover{color:var(--blue)}
+.lang{border:1.5px solid var(--line);border-radius:4px;padding:.25rem .55rem;font-size:.85rem!important;color:var(--ink)!important}
+.nav-toggle{display:none;background:none;border:1.5px solid var(--line);border-radius:4px;color:var(--ink);padding:.35rem .6rem;font:inherit}
+@media (max-width:860px){
+  .nav ul{display:none;position:absolute;left:0;right:0;top:66px;background:var(--card);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;padding:1rem 1.25rem;gap:1rem}
+  .nav ul.open{display:flex}
+  .nav-toggle{display:inline-block}
+}
+
+/* hero */
+.hero{position:relative;color:#fff;isolation:isolate;min-height:560px;display:flex;align-items:flex-end}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 55%;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,24,54,.25) 0%,var(--hero-ov) 55%,rgba(8,24,54,.88) 100%);z-index:-1}
+.hero .wrap{padding:6rem 0 3.5rem;display:grid;gap:1.2rem;max-width:min(1180px,calc(100% - 2.5rem))}
+.hero .wm{font-size:clamp(2.6rem,6vw,4.6rem)}
+.hero .kicker{color:#B9E36A}
+.hero h1{color:#fff;max-width:14ch}
+.hero p{max-width:60ch;font-size:1.12rem;color:#E4ECF7}
+.hero .actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:.6rem}
+.stats{background:var(--navy);color:#fff}
+:root[data-theme="dark"] .stats{background:#0F2140;color:#E9F0FA}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .stats{background:#0F2140;color:#E9F0FA}}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1px}
+.stats div{padding:1.3rem 1.2rem 1.3rem 0;border-left:1px solid rgba(255,255,255,.18);padding-left:1.2rem}
+.stats div:first-child{border-left:0;padding-left:0}
+.stats b{display:block;font-family:"Barlow Condensed","Barlow",system-ui,sans-serif;font-weight:700;font-size:2.1rem;line-height:1;letter-spacing:.01em;color:#B9E36A;font-variant-numeric:tabular-nums}
+.stats span{font-size:.92rem;opacity:.85}
+@media (max-width:760px){.stats .wrap{grid-template-columns:1fr 1fr}.stats div:nth-child(3){border-left:0;padding-left:0}}
+
+/* ambiente */
+.two{display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem;align-items:start}
+@media (max-width:900px){.two{grid-template-columns:1fr}}
+.two p + p{margin-top:1rem}
+.scr{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.6rem}
+.scr h3{margin-bottom:1rem}
+.scr ol{list-style:none;margin:0;padding:0;display:grid;gap:1rem;counter-reset:s}
+.scr li{display:grid;grid-template-columns:2.2rem 1fr;gap:.9rem;align-items:start}
+.scr li::before{counter-increment:s;content:counter(s);font-family:"Barlow Condensed",system-ui,sans-serif;font-weight:700;font-size:1.3rem;color:#fff;background:var(--blue);width:2.2rem;height:2.2rem;border-radius:50%;display:grid;place-items:center}
+.scr li b{display:block;font-family:"Barlow",system-ui,sans-serif;font-weight:600;font-size:1.05rem}
+.scr li span{color:var(--ink-2);font-size:.98rem}
+.eq{margin-top:1.3rem;padding-top:1.1rem;border-top:1px dashed var(--line);font-family:"Barlow Condensed",system-ui,sans-serif;font-size:1.6rem;font-weight:600;color:var(--navy);letter-spacing:.03em}
+
+/* produto */
+.formats{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+@media (max-width:1000px){.formats{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.formats{grid-template-columns:repeat(2,1fr)}}
+.fmt{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.fmt img{aspect-ratio:1/1;object-fit:cover;object-position:left center;width:100%;border-bottom:1px solid var(--line)}
+.fmt .b{padding:1rem 1.05rem 1.2rem;display:grid;gap:.25rem}
+.fmt .vol{font-family:"Barlow Condensed",system-ui,sans-serif;font-weight:700;font-size:1.9rem;line-height:1;color:var(--blue)}
+.fmt .kind{font-family:"Barlow",system-ui,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.75rem;color:var(--mute)}
+.fmt p{font-size:.93rem;color:var(--ink-2);margin-top:.3rem}
+.prod-low{display:grid;grid-template-columns:1fr 1.3fr;gap:1.5rem;margin-top:1.5rem}
+@media (max-width:900px){.prod-low{grid-template-columns:1fr}}
+.panel{background:var(--tint);border-radius:10px;padding:1.6rem}
+.panel h3{margin-bottom:.6rem}
+.panel p{color:var(--ink-2)}
+.spec{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.4rem 1.6rem}
+.spec h3{margin-bottom:.8rem}
+.spec dl{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:.55rem 1.4rem;font-size:.97rem}
+.spec dt{font-family:"Barlow",system-ui,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:.76rem;color:var(--mute);padding-top:.2rem}
+.spec dd{margin:0;color:var(--ink)}
+@media (max-width:520px){.spec dl{grid-template-columns:1fr;gap:.2rem .8rem}.spec dd{margin-bottom:.5rem}}
+
+/* produção */
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:auto auto;gap:.8rem;margin-top:2.4rem}
+.gallery figure{margin:0;position:relative;border-radius:8px;overflow:hidden;background:var(--mist)}
+.gallery figure:first-child{grid-row:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.gallery figure:first-child img{aspect-ratio:auto;min-height:100%}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .9rem .7rem;font-size:.82rem;color:#fff;background:linear-gradient(transparent,rgba(5,16,40,.75))}
+@media (max-width:760px){.gallery{grid-template-columns:1fr 1fr}.gallery figure:first-child{grid-column:span 2;grid-row:auto}}
+.pillars{margin-top:2.4rem;display:grid;grid-template-columns:auto 1fr;gap:1.2rem 2rem;align-items:center;padding:1.4rem 1.6rem;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.pillars ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.pillars li{border:1.5px solid var(--green);color:var(--ink);border-radius:999px;padding:.35rem .85rem;font-size:.9rem;font-family:"Barlow",system-ui,sans-serif;font-weight:600}
+@media (max-width:760px){.pillars{grid-template-columns:1fr}}
+
+/* EU */
+.eu{background:var(--card)}
+.eu-bar{display:inline-block;background:#fff;padding:.7rem 1rem;border-radius:8px;border:1px solid var(--line);margin-bottom:2rem}
+.eu-bar img{height:64px;width:auto}
+.eu-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:start}
+@media (max-width:900px){.eu-grid{grid-template-columns:1fr}}
+.eu-grid p{color:var(--ink-2);margin-top:1rem;max-width:66ch}
+.eu-rows{margin-top:1.5rem;display:grid;gap:.7rem;font-size:.97rem}
+.eu-rows div{display:grid;grid-template-columns:110px 1fr;gap:1rem;padding-bottom:.7rem;border-bottom:1px solid var(--line)}
+.eu-rows b{font-family:"Barlow",system-ui,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:.76rem;color:var(--mute);padding-top:.15rem}
+.eu-nums{display:grid;gap:.8rem}
+.eu-nums div{background:var(--tint);border-radius:8px;padding:1.1rem 1.3rem}
+.eu-nums span{display:block;font-family:"Barlow",system-ui,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.74rem;color:var(--mute)}
+.eu-nums b{font-family:"Barlow Condensed",system-ui,sans-serif;font-weight:700;font-size:1.9rem;line-height:1.1;color:var(--navy);font-variant-numeric:tabular-nums}
+.eu-nums div:last-child b{color:var(--leaf)}
+.partners{margin-top:1.2rem;font-size:.95rem;color:var(--ink-2)}
+.partners span{display:block;font-family:"Barlow",system-ui,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.74rem;color:var(--mute);margin-bottom:.35rem}
+.placa{margin-top:1.4rem;border-radius:8px;border:1px solid var(--line);max-width:340px}
+
+.status{margin-top:1.8rem}
+.status h3{margin-bottom:.7rem}
+.status ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.status li{display:grid;grid-template-columns:1.1rem 1fr;gap:.7rem;align-items:start;font-size:.97rem}
+.status li::before{content:"";width:1.1rem;height:1.1rem;border-radius:50%;background:var(--green);margin-top:.3rem;box-shadow:inset 0 0 0 3px var(--card)}
+.status li b{display:block;font-family:"Barlow",system-ui,sans-serif;font-weight:600}
+.status li span{color:var(--ink-2)}
+.status p{color:var(--ink-2);margin-bottom:1rem}
+.stages{display:grid;gap:.8rem}
+.stage{border-left:4px solid var(--line);padding:.2rem 0 .2rem 1rem}
+.stage.done{border-color:var(--green)} .stage.doing{border-color:var(--sky)} .stage.next{border-color:var(--line)}
+.stage h4{font-family:"Barlow",system-ui,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;margin:0 0 .35rem;color:var(--ink-2)}
+.stage.done h4{color:var(--leaf)} .stage.doing h4{color:var(--blue)}
+.stage ul{margin:0;padding-left:1.1rem;color:var(--ink);font-size:.95rem;display:grid;gap:.2rem}
+.cm-banner{border-radius:10px;border:1px solid var(--line);margin-bottom:1.2rem}
+.cm{display:grid;grid-template-columns:1.15fr .85fr;gap:1.5rem;align-items:start}
+@media (max-width:900px){.cm{grid-template-columns:1fr}}
+.cm-feats{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media (max-width:560px){.cm-feats{grid-template-columns:1fr}}
+.cm-feats div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.2rem;display:grid;gap:.25rem}
+.cm-feats b{font-family:"Barlow",system-ui,sans-serif;font-weight:600;color:var(--navy);font-size:1.05rem}
+.cm-feats span{color:var(--ink-2);font-size:.94rem}
+.cm-models{list-style:none;margin:0;padding:0;display:grid;gap:.6rem;color:var(--ink-2)}
+.cm-models b{color:var(--navy);font-family:"Barlow",system-ui,sans-serif}
+.eu-note{margin-top:.8rem;font-size:.82rem;color:var(--mute)}
+.mk{display:grid;grid-template-columns:1.15fr .85fr;gap:1.5rem;align-items:start}
+@media (max-width:900px){.mk{grid-template-columns:1fr}}
+.mk-segs{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.4rem 1.6rem}
+.mk-segs h3{margin-bottom:1rem}
+.segs{display:grid;gap:0}
+.seg{display:grid;grid-template-columns:minmax(150px,.7fr) 1fr;gap:1rem;padding:.75rem 0;border-top:1px solid var(--line);font-size:.96rem}
+.seg b{font-family:"Barlow",system-ui,sans-serif;font-weight:600;color:var(--navy)}
+.seg span{color:var(--ink-2)}
+@media (max-width:520px){.seg{grid-template-columns:1fr;gap:.2rem}}
+.mk-side{display:grid;gap:1rem}
+.countries{list-style:none;margin:1rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.45rem}
+.countries li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.3rem .8rem;font-size:.88rem;font-family:"Barlow",system-ui,sans-serif;font-weight:600}
+.countries li:first-child{background:var(--green);border-color:var(--green);color:#0B1E08}
+/* gama */
+.range{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.rg{display:grid;grid-template-columns:200px 1fr;gap:1.4rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.2rem}
+.rg img{border-radius:8px;aspect-ratio:1/1;object-fit:cover;object-position:left center}
+.rg h3{margin:.5rem 0 .4rem}
+.rg p{color:var(--ink-2);font-size:.95rem}
+.badge{display:inline-block;font-family:"Barlow",system-ui,sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;border-radius:4px}
+.badge.avail{background:var(--green);color:#0B1E08}
+.badge.soon{background:var(--mist);color:var(--ink-2)}
+@media (max-width:900px){.range{grid-template-columns:1fr}}
+@media (max-width:520px){.rg{grid-template-columns:1fr}}
+
+/* contactos */
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:.5rem}
+@media (max-width:820px){.contact{grid-template-columns:1fr}}
+.cc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.4rem 1.5rem;display:grid;gap:.5rem;align-content:start}
+.cc span{font-family:"Barlow",system-ui,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.76rem;color:var(--mute)}
+.cc a.big{font-family:"Barlow Condensed",system-ui,sans-serif;font-size:2rem;font-weight:700;text-decoration:none;color:var(--navy);line-height:1.1;font-variant-numeric:tabular-nums}
+.cc a.mail{font-size:1.2rem;font-weight:600;text-decoration:none;color:var(--navy);word-break:break-all}
+.cc address{font-style:normal;color:var(--ink);line-height:1.5}
+.cc .btn{justify-self:start;margin-top:.4rem}
+
+/* footer */
+footer{background:var(--navy);color:#DCE7F7;padding:3rem 0 2rem;font-size:.9rem}
+:root[data-theme="dark"] footer{background:#071022}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) footer{background:#071022}}
+footer .top{display:grid;grid-template-columns:auto 1fr auto;gap:2rem;align-items:center;padding-bottom:1.6rem;border-bottom:1px solid rgba(255,255,255,.15)}
+footer .logo{background:#fff;border-radius:8px;padding:.6rem 1rem}
+footer .logo img{height:54px;width:auto}
+footer .eu-bar{margin:0;padding:.5rem .8rem}
+footer .eu-bar img{height:46px}
+footer .legal{padding-top:1.2rem;display:grid;gap:.4rem;opacity:.85;max-width:90ch}
+footer .wm{font-size:1.5rem}
+@media (max-width:820px){footer .top{grid-template-columns:1fr;justify-items:start}}
+</style></head><body>
+<header class="nav"><div class="wrap">
+  <a class="wm" href="#top" aria-label="AdBio Blue"><span class="ad">Ad</span><span class="bio">Bio</span><span class="blue">Blue</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+  <ul id="menu"><li><a href="#projeto">EU Project</a></li><li><a href="#mercados">Markets</a></li><li><a href="#produto">Product</a></li><li><a href="#comodato">Loan tanks</a></li><li><a href="#ambiente">Environment</a></li><li><a href="#producao">Production</a></li><li><a href="#gama">Range</a></li><li><a href="#contactos">Contact</a></li><li><a class="lang" href="../" hreflang="pt-PT">PT</a></li></ul>
+</div></header>
+<main id="top">
+<section class="hero">
+  <img class="bg" src="../img/fachada.jpg" alt="">
+  <div class="wrap">
+    <span class="wm wm-inv" aria-hidden="true"><span class="ad">Ad</span><span class="bio">Bio</span><span class="blue">Blue</span></span>
+    <span class="kicker">32.5% urea solution · ISO 22241 · Made in Vila Real, Portugal</span>
+    <h1>Quality that moves the future.</h1>
+    <p>AdBio Blue is the diesel exhaust fluid for SCR‑equipped engines: it cuts nitrogen‑oxide emissions and keeps your vehicles compliant with Euro 4, 5 and 6. Produced in Portugal, at the Constantim industrial estate in Vila Real.</p>
+    <div class="actions"><a class="btn btn-primary" href="#produto">See the product</a><a class="btn btn-ghost" href="#projeto">COMPETE 2030 project</a><a class="btn btn-ghost" href="https://wa.me/351915433123" target="_blank" rel="noopener">Request a quote</a></div>
+  </div>
+</section>
+<section class="stats"><div class="wrap"><div><b>up to 90%</b><span>lower NOx emissions</span></div><div><b>32.5%</b><span>high‑purity technical urea</span></div><div><b>ISO 22241</b><span>and DIN 70070</span></div><div><b>Euro 4·5·6</b><span>environmental compliance</span></div></div></section>
+
+<section class="sec eu" id="projeto"><div class="wrap">
+  <div class="eu-bar"><img src="../img/barra-compete2030.jpg" alt="COMPETE 2030 · Portugal 2030 · Cofinanciado pela União Europeia"></div>
+  <div class="eu-grid">
+    <div>
+      <span class="kicker">Co‑financed project</span>
+      <h2 style="margin-top:.6rem">Creation of an Advanced, Automated Unit for the Production of AdBio Blue</h2>
+      <p>This project is only possible thanks to European Union support through COMPETE 2030 / Portugal 2030, and to the backing of Régia Douro Park and the City of Vila Real. Creation of an advanced, automated industrial unit for AdBio Blue production, with innovative Industry 4.0 and climate‑transition processes, aimed at reducing NOx emissions from diesel engines.</p>
+      <div class="eu-rows"><div><b>Beneficiary</b><span>Gomes Dias Macedo, Lda · VAT PT517423510</span></div><div><b>Programme</b><span>COMPETE 2030 — Competitiveness and Internationalisation · Portugal 2030</span></div><div><b>Location</b><span>Vale do Jurado, Zona Industrial, Lote 73 · Constantim e Vale de Nogueiras · 5000‑082 Vila Real, Portugal</span></div></div>
+      <div class="partners"><span>With the support of</span>Régia Douro Park — Vila Real Science and Technology Park<br>Municipality of Vila Real</div>
+      <div class="status"><h3>Implementation status</h3><p>The plant is operating and expanding. The project advances in phases:</p><div class="stages"><div class="stage done"><h4>Completed</h4><ul><li>Unit installed at the Constantim industrial estate, Vila Real</li><li>Stainless‑steel tanks, mixing and dosing, finished‑product storage</li><li>AdBio Blue produced and sold to ISO 22241 / DIN 70070</li><li>Customers in Portugal, five other EU Member States and Algeria</li></ul></div><div class="stage doing"><h4>In progress</h4><ul><li>Purchase and installation of new production equipment</li><li>Further automation and control systems (Industry 4.0)</li><li>Demineralised water in bulk; 5 L pack in preparation</li></ul></div><div class="stage next"><h4>Planned</h4><ul><li>New automatic production and filling lines</li><li>Process and product innovation (G‑12 antifreeze)</li><li>Wider network of loaned storage tanks at customer sites</li></ul></div></div></div>
+    </div>
+    <div>
+      <div class="eu-nums"><div><span>Total cost</span><b>€2,605,132.70</b></div><div><span>Eligible cost</span><b>€2,552,132.70</b></div><div><span>EU financial support</span><b>€1,020,853.08</b></div></div>
+      <img class="placa" src="../img/placa-compete2030.jpg" alt="Placa do projeto COMPETE 2030" loading="lazy">
+      <img class="placa" src="../img/placas.jpg" alt="Placa COMPETE 2030 afixada na fachada da unidade em Constantim" loading="lazy">
+      <p class="eu-note">Publicity information for the grant under Portugal 2030 communication rules. Plaque displayed on the plant façade.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" id="mercados"><div class="wrap">
+  <div class="head"><span class="kicker">Markets</span><h2>Who we supply, and where</h2><p class="lede">AdBio Blue is built around the real distribution chain for diesel exhaust fluid in Portugal: from the filling station to the fleet, from the workshop to the corner shop.</p></div>
+  <div class="mk">
+    <div class="mk-segs"><h3>Customers in Portugal</h3><div class="segs"><div class='seg'><b>Filling stations</b><span>Bulk for dispensing pumps, plus 5 L and 10 L jerrycans for counter sales.</span></div><div class='seg'><b>Hauliers and fleets</b><span>Bulk tanker deliveries, 1000 L IBCs and 200 L drums.</span></div><div class='seg'><b>Workshops</b><span>Top‑ups for cars and trucks; IBCs with pump and meter.</span></div><div class='seg'><b>Supermarkets and convenience stores</b><span>5 L and 10 L jerrycans for end consumers.</span></div><div class='seg'><b>Oil and lubricant resellers</b><span>Full range, with technical support and regular deliveries.</span></div></div></div>
+    <div class="mk-side">
+      <div class="panel"><h3>Exports</h3><p>Beyond Portugal, GDM Petro supplies customers in Spain, France, Italy, Germany and Greece, and outside the EU in Algeria.</p><ul class="countries"><li>Portugal</li><li>Spain</li><li>France</li><li>Italy</li><li>Germany</li><li>Greece</li><li>Algeria</li></ul></div>
+      <div class="panel"><h3>Raw material</h3><p>We use only first‑grade automotive urea (AUS 32 grade), sourced from several suppliers to secure continuity — Spain, Poland, Ukraine, China and Turkey — and chiefly from Petrobras in Brazil. Demineralised water is produced at our own plant.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" id="produto"><div class="wrap">
+  <div class="head"><span class="kicker">The product</span><h2>AdBio Blue, in the right format for your operation</h2><p class="lede">From topping up a car to supplying an entire fleet. Every format comes off the same production line, under the same quality control.</p></div>
+  <div class="formats"><article class="fmt"><img src="../img/prod-5l.jpg" alt="AdBio Blue 5 L Jerrycan" loading="lazy"><div class="b"><span class="vol">5 L</span><span class="kind">Jerrycan</span><p>Top‑ups for cars and light commercials. Handy, with a filling spout.</p></div></article><article class="fmt"><img src="../img/prod-10l.jpg" alt="AdBio Blue 10 L Jerrycan" loading="lazy"><div class="b"><span class="vol">10 L</span><span class="kind">Jerrycan</span><p>For regular users who want fewer stops at the pump.</p></div></article><article class="fmt"><img src="../img/prod-200l.jpg" alt="AdBio Blue 200 L Drum" loading="lazy"><div class="b"><span class="vol">200 L</span><span class="kind">Drum</span><p>For workshops and small to mid‑size fleets that start refuelling in‑house.</p></div></article><article class="fmt"><img src="../img/prod-ibc.jpg" alt="AdBio Blue 1000 L IBC" loading="lazy"><div class="b"><span class="vol">1000 L</span><span class="kind">IBC</span><p>High‑volume users. Takes a pump, meter and dispensing hose.</p></div></article><article class="fmt"><img src="../img/prod-cisterna.jpg" alt="AdBio Blue Bulk Tanker" loading="lazy"><div class="b"><span class="vol">Bulk</span><span class="kind">Tanker</span><p>Delivered straight into your tank — fleets, filling stations and industry. No packaging, no waste.</p></div></article></div>
+  <div class="prod-low">
+    <div class="panel"><h3>At the pump</h3><p>We supply AdBio Blue in bulk for dispensing pumps at filling stations — the most economical and convenient option for drivers, and a clear market trend.</p><p style="margin-top:1rem"><a class="btn btn-navy" href="https://wa.me/351915433123" target="_blank" rel="noopener">Request a quote</a></p></div>
+    <div class="spec"><h3>Technical data</h3><dl><dt>Product</dt><dd>Diesel Exhaust Fluid (AUS 32 / DEF / ARLA 32)</dd><dt>Composition</dt><dd>Aqueous solution of high‑purity technical urea at 32.5% (±0.7%) in demineralised water</dd><dt>Standards</dt><dd>ISO 22241 · DIN 70070</dd><dt>Application</dt><dd>Diesel vehicles with SCR systems — Euro 4, 5 and 6</dd><dt>Control</dt><dd>Concentration verified with a digital refractometer throughout the process</dd><dt>Safety</dt><dd>Non‑toxic · Non‑flammable · Non‑explosive · Not harmful to the environment</dd></dl></div>
+  </div>
+</div></section>
+
+<section class="sec" id="comodato"><div class="wrap">
+  <div class="head"><span class="kicker">Tanks on free loan</span><h2>We install the tank. You just refill.</h2><p class="lede">For filling stations, hauliers, workshops and farms, GDM Petro supplies and installs AdBio Blue storage tanks with pump and meter on a free‑loan basis. No upfront investment for the customer, tied to a bulk supply contract.</p></div>
+  <img class="cm-banner" src="../img/comodato.jpg" alt="Reservatórios AdBio Blue horizontal e vertical com bomba e contador" loading="lazy">
+  <div class="cm">
+    <div class="cm-feats"><div><b>Express installation</b><span>Only needs an electrical connection — no building work.</span></div><div><b>Certified</b><span>Meets the legal requirements for storage and dispensing.</span></div><div><b>Adam Pumps</b><span>Leading Italian pump brand.</span></div><div><b>Digital meter</b><span>Partial, total and instant readings.</span></div></div>
+    <div class="mk-side">
+      <div class="panel"><ul class="cm-models"><li><b>Horizontal</b> Compact bunded tank for low‑height spaces.</li><li><b>Vertical</b> Cylindrical, smaller floor footprint.</li></ul></div>
+      <div class="panel"><h3>Who it's for</h3><ul class="countries"><li>Filling stations</li><li>Hauliers</li><li>Workshops</li><li>Farms</li></ul><p style="margin-top:1rem"><a class="btn btn-navy" href="https://wa.me/351915433123" target="_blank" rel="noopener">Request a loan‑tank assessment</a></p></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" id="ambiente"><div class="wrap">
+  <div class="head"><span class="kicker">Why AdBio Blue</span><h2>Cleaner air on the road</h2></div>
+  <div class="two">
+    <div><p class="lede">Diesel engines release nitrogen oxides (NOx), a leading cause of urban smog, acid rain and respiratory disease. The SCR system (Selective Catalytic Reduction) injects AdBio Blue into the exhaust stream, where urea converts to ammonia and reacts with NOx in the catalyst. What leaves the tailpipe is nitrogen and water vapour — the same components as the air we breathe.</p><p class="lede">That reaction is what lets heavy and light vehicles meet Euro 4, 5 and 6. There is also an indirect climate benefit: with SCR handling NOx downstream, the engine can be tuned to burn more efficiently, using less fuel and emitting less CO₂ per kilometre.</p></div>
+    <aside class="scr"><h3>How SCR works</h3><ol><li><div><b>Injection</b><span>AdBio Blue is metered precisely into the exhaust stream, upstream of the catalyst.</span></div></li><li><div><b>Reaction</b><span>Heat releases ammonia (NH₃) from the urea, which reacts with nitrogen oxides (NOx) in the SCR catalyst.</span></div></li><li><div><b>Result</b><span>Nitrogen (N₂) and water vapour (H₂O) leave the tailpipe. Less NOx, less smog, better air quality.</span></div></li></ol><div class="eq">NOx + NH₃ → N₂ + H₂O</div></aside>
+  </div>
+</div></section>
+
+<section class="sec" id="producao"><div class="wrap">
+  <div class="head"><span class="kicker">Production</span><h2>Made in Vila Real, on an automated line</h2></div>
+  <div class="two"><p class="lede">GDM Petro's plant at the Constantim industrial estate was purpose‑built to produce AdBio Blue: stainless‑steel tanks, automated mixing and dosing, and urea concentration checked on every batch with a digital refractometer.</p><p class="lede">Dedicated storage and transport ensure the product reaches you with the same purity it left the line — protecting your vehicle's SCR catalyst and injector.</p></div>
+  <div class="gallery"><figure><img src="../img/nave.jpg" alt="Production line and finished‑goods warehouse" loading="lazy"><figcaption>Production line and finished‑goods warehouse</figcaption></figure><figure><img src="../img/tanques1.jpg" alt="Stainless‑steel mixing tanks" loading="lazy"><figcaption>Stainless‑steel mixing tanks</figcaption></figure><figure><img src="../img/tanques2.jpg" alt="Dosing unit and control panel" loading="lazy"><figcaption>Dosing unit and control panel</figcaption></figure><figure><img src="../img/depositos.jpg" alt="Finished‑product tanks, 5,000 L" loading="lazy"><figcaption>Finished‑product tanks, 5,000 L</figcaption></figure><figure><img src="../img/placas.jpg" alt="The plant at the Constantim industrial estate, Vila Real" loading="lazy"><figcaption>The plant at the Constantim industrial estate, Vila Real</figcaption></figure></div>
+  <div class="pillars"><h3>Five commitments, in every litre</h3><ul><li>32.5% urea solution</li><li>NOx emission reduction</li><li>Technology and automation</li><li>Sustainable process</li><li>Performance and compliance</li></ul></div>
+</div></section>
+
+<section class="sec" id="gama"><div class="wrap">
+  <div class="head"><span class="kicker">GDM Petro range</span><h2>Same line, same rigour</h2><p class="lede">The demineralised water we produce for AdBio Blue is also sold as a product in its own right, and the range keeps growing.</p></div>
+  <div class="range"><article class="rg"><img src="../img/prod-agua.jpg" alt="Demineralised Water" loading="lazy"><div><span class="badge avail">Available in bulk</span><h3>Demineralised Water</h3><p>Free of mineral salts and impurities. For batteries, radiators, cooling systems and industrial use. Supplied in bulk today; 5 L pack in preparation.</p></div></article><article class="rg"><img src="../img/prod-anticongelante.jpg" alt="Antifreeze · Coolant" loading="lazy"><div><span class="badge soon">In preparation</span><h3>Antifreeze · Coolant</h3><p>Organic, long‑life (G‑12 technology), protection from −35 °C to +145 °C, for diesel and petrol engines.</p></div></article></div>
+</div></section>
+
+
+
+
+
+
+<section class="sec" id="contactos"><div class="wrap">
+  <div class="head"><span class="kicker">Contact</span><h2>Talk to us</h2><p class="lede">Quotes for fleets, filling stations, workshops and resellers. We reply on business days.</p></div>
+  <div class="contact">
+    <div class="cc"><span>Phone · WhatsApp</span><a class="big" href="tel:+351915433123">915 433 123</a><a class="btn btn-primary" href="https://wa.me/351915433123" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+    <div class="cc"><span>E‑mail</span><a class="mail" href="mailto:gdm.petro@gmail.com">gdm.petro@gmail.com</a></div>
+    <div class="cc"><span>Address</span><address>Gomes Dias Macedo, Lda<br>Vale do Jurado, Zona Industrial, Lote 73<br>5000‑082 Constantim · Vila Real<br>Portugal</address><a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Vale+do+Jurado+Zona+Industrial+Lote+73+Constantim+Vila+Real" target="_blank" rel="noopener">Open in Google Maps</a></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div class="top">
+    <div class="logo"><img src="../img/gdm-petro.png" alt="GDM Petro"></div>
+    <span class="wm wm-inv" aria-hidden="true"><span class="ad">Ad</span><span class="bio">Bio</span><span class="blue">Blue</span></span>
+    <div class="eu-bar"><img src="../img/barra-compete2030.jpg" alt="COMPETE 2030 · Portugal 2030 · Cofinanciado pela União Europeia"></div>
+  </div>
+  <div class="legal"><span>Gomes Dias Macedo, Lda · VAT PT517423510 · Vale do Jurado, Zona Industrial, Lote 73, 5000‑082 Constantim, Vila Real, Portugal</span><span>Project co‑financed by the European Union — COMPETE 2030 · Portugal 2030</span><span>AdBio Blue® is a GDM Petro brand. AdBlue® is a registered trademark of the VDA. AUS 32, DEF and ARLA 32 all designate the same product standardised by ISO 22241.</span><span>© 2026 GDM Petro. All rights reserved.</span></div>
+</div></footer>
+<script>
+(function(){
+  var b=document.querySelector('.nav-toggle'),u=document.querySelector('.nav ul');
+  if(b){b.addEventListener('click',function(){var o=u.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  u.addEventListener('click',function(e){if(e.target.tagName==='A')u.classList.remove('open')});}
+})();
+</script></body></html>
